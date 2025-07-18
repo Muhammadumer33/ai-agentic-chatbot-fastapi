@@ -33,5 +33,37 @@ An intelligent, customizable AI chatbot powered by **LangGraph**, **Groq**, **Op
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/ai-agentic-chatbot-fastapi.git
+git clone https://github.com/Muhammadumer33/ai-agentic-chatbot-fastapi.git
 cd ai-agentic-chatbot-fastapi
+
+2️⃣ Create a Virtual Environment
+python -m venv venv
+source venv/bin/activate   # Linux/macOS
+venv\Scripts\activate      # Windows
+3️⃣ Install Dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+4️⃣ Setup Environment Variables
+Create a .env file in the root directory:
+
+env
+Copy
+Edit
+GROQ_API_KEY=your_groq_api_key
+OPENAI_API_KEY=your_openai_api_key
+TAVILY_API_KEY=your_tavily_api_key
+▶️ Running the App
+Step 1: Run the FastAPI Backend
+bash
+Copy
+Edit
+python backend.py
+It will be live at: http://127.0.0.1:9999/chat
+
+Step 2: Run the Streamlit Frontend
+bash
+Copy
+Edit
+streamlit run frontend.py
